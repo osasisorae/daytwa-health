@@ -1,0 +1,3 @@
+helper_mgs = "You can ask me for personalized health information or advice, and I'll provide you with relevant resources to help you maintain a healthy lifestyle."
+start_msg = "Hi! I'm Daytwa Health, your personal preventive health assistant. How can I help you today?"
+myprofile_msg = "Creating your health profile is a great way to track and improve your well-being. You can format your profile by asking questions about your health and providing detailed answers. For example:\n\nAm I managing my stress effectively? - I meditate every morning, I do yoga, cardio, and breathing exercises 4 times every week. This information will help me provide you with personalized health advice. Please start by sharing your first question and answer, and I'll assist you from there!"
