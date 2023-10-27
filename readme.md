@@ -42,8 +42,8 @@ Before you begin, ensure you have the following prerequisites:
 ## Usage
 
 ### Commands
-- `/start`: Start a conversation with the chatbot.
-- `/help`: Get instructions and assistance from the chatbot.
+- `/chat`: Start a conversation with the chatbot.
+- `/start`: Get instructions and assistance from the chatbot.
 - `/myprofile`: Initiate the process of creating your health profile.
 
 ### Creating Your Health Profile
