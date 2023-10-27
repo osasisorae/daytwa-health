@@ -1,4 +1,4 @@
-# Daytwa Health Project
+# Daytwa Health Project: A Retrieval Augmented Generation Chat Agent
 
 ## Table of Contents
 - [Introduction](#introduction)
@@ -12,6 +12,7 @@
 - [Architecture](#architecture)
 - [Contributing](#contributing)
 - [License](#license)
+- [Environment Variables](#environment-variables)
 
 ## Introduction
 The Daytwa Health Project is a Telegram-based chatbot designed to provide information and guidance on preventive health. It can help users create their health profiles, answer health-related questions, and provide personalized health advice.
@@ -68,3 +69,10 @@ We welcome contributions to the project. If you'd like to contribute, please fol
 
 ## License
 This project is licensed under the MIT License.
+
+## Environment Variables
+Make sure to set the following environment variables in your `.env` file:
+
+- `BOT_TOKEN`: Your Telegram Bot token.
+- `OPENAI_API_KEY`: Your OpenAI API key.
+- `APIFY_API_TOKEN`: Your Apify API token.
