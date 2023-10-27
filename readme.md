@@ -76,3 +76,6 @@ Make sure to set the following environment variables in your `.env` file:
 - `BOT_TOKEN`: Your Telegram Bot token.
 - `OPENAI_API_KEY`: Your OpenAI API key.
 - `APIFY_API_TOKEN`: Your Apify API token.
+
+## Currently Integrated Sites
+Check the site we get out our real time data [here](SITES.md)

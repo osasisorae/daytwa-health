@@ -1,0 +1,19 @@
+## We're currently scraping and getting updated live data from the following sites and will add more in the future.
+- WebMD
+- Mayo Clinic
+- MedlinePlus
+- CDC (Centers for Disease Control and Prevention)
+- NHS (National Health Service, UK)
+- PubMed
+- Johns Hopkins Medicine
+- Cleveland Clinic
+- Health.com
+- World Health Organization (WHO)
+- Everyday Health
+- Patient.info
+- HealthDay
+- Medical News Today
+- FamilyDoctor.org
+- Merck Manual
+- Nutrition.gov
+- KidsHealth
