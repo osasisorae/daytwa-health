@@ -35,9 +35,12 @@ def myprofile(message):
 
 def profiler(message):
     
-    # Check if the message is the /myprofile command
+    # Check if the message is the /chat command
     if message.text.startswith('/chat'):
         chat(message)
+    # Check if the message is the /start command
+    elif message.text.startswith('/start'):
+        start(message)
     else:
         
         # Get the user ID from chat
@@ -68,6 +71,9 @@ def echo(message):
     # Check if the message is the /myprofile command
     if message.text.startswith('/myprofile'):
         myprofile(message)
+    # Check if the message is the /start command
+    elif message.text.startswith('/start'):
+        start(message)
     else:
         # Initialize the profiler for the current user
         profiler_db = Profiler(user_id=user_id)

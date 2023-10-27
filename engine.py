@@ -3,6 +3,7 @@ from langchain.indexes import VectorstoreIndexCreator
 from langchain.utilities import ApifyWrapper
 import os
 from decouple import config
+from default_prompts import preventive_health_urls
 
 class DaytwaBot:
     """This is a chat bot, powered by Apify and langchain. 
@@ -15,15 +16,7 @@ class DaytwaBot:
         os.environ["APIFY_API_TOKEN"] = config('APIFY_API_TOKEN')
         
         # initialize databank, as URL's
-        self.urls = [
-            {'url': 'https://www.healthline.com/search?q1=Preventive%20Health'}, {'url': 'https://www.healthline.com/search?q1=Wellness'}, 
-            {'url': 'https://www.healthline.com/search?q1=Preventive%20Medicine'}, {'url': 'https://www.healthline.com/search?q1=Health%20Tips'}, 
-            {'url': 'https://www.healthline.com/search?q1=Disease%20Prevention'}, {'url': 'https://www.healthline.com/search?q1=Healthy%20Lifestyle'}, 
-            {'url': 'https://www.healthline.com/search?q1=Immunizations'}, {'url': 'https://www.healthline.com/search?q1=Nutrition'}, 
-            {'url': 'https://www.healthline.com/search?q1=Physical%20Activity'}, {'url': 'https://www.healthline.com/search?q1=Stress%20Reduction'}, 
-            {'url': 'https://www.healthline.com/search?q1=Mental%20Health'}, {'url': 'https://www.healthline.com/search?q1=Preventive%20Screenings'}, 
-            {'url': 'https://www.healthline.com/search?q1=Healthy%20Aging'}, {'url': 'https://www.healthline.com/search?q1=Family%20Health'}, 
-            {'url': 'https://www.healthline.com/search?q1=Community%20Health'}]
+        self.urls = preventive_health_urls
         
         # initilaize apifywrapper
         self.apify = ApifyWrapper()

@@ -24,3 +24,31 @@ questions_and_answers = [
     "Am I following recommended guidelines for regular health check-ups based on my age and gender? - I follow my healthcare provider's recommendations for annual check-ups and screenings.",
     "Are there any specific preventive measures or screenings recommended based on my personal and family medical history? - My family medical history suggests a higher risk of heart disease, so I undergo heart-related screenings as advised by my doctor."
 ]
+
+preventive_health_urls = [
+    {'url': 'https://www.webmd.com/search?query=preventive%2Bhealth'},
+    {'url': 'https://www.mayoclinic.org/search/search-results?q=preventive%20health'},
+    {'url': 'https://vsearch.nlm.nih.gov/vivisimo/cgi-bin/query-meta?v%3Aproject=medlineplus&v%3Asources=medlineplus-bundle&query=preventive+health'},
+    {'url': 'https://search.cdc.gov/search/?query=preventive%20health&dpage=1'},
+    {'url': 'https://www.nhs.uk/search/results?q=preventive%20health&page=0'},
+    {'url': 'https://pubmed.ncbi.nlm.nih.gov/?term=preventive+health'},
+    {'url': 'https://www.hopkinsmedicine.org/search?form_instance=enterprise&q=preventive+health'},
+    {'url': 'https://my.clevelandclinic.org/search?q=preventive%20health'},
+    {'url': 'https://www.health.com/search?q=preventive+health'},
+    {'url': 'https://www.who.int/home/search?indexCatalogue=genericsearchindex1&searchQuery=preventive%20health&wordsMode=AnyWord'},
+    {'url': 'https://www.everydayhealth.com/search/?q=preventive%20health'},
+    {'url': 'https://patient.info/search.asp?searchterm=preventive+health&searchcoll=All'},
+    {'url': 'https://www.healthday.com/search?q=preventive%20health'},
+    {'url': 'https://www.medicalnewstoday.com/search?q=preventive%20health'},
+    {'url': 'https://familydoctor.org/?s=preventive+health'},
+    {'url': 'https://www.nutrition.gov/'},
+    {'url': 'https://kidshealth.org/content/kidshealth/us/en/searchresults.html?q=preventive%20health&start=0'},
+    {'url': 'https://www.healthline.com/search?q1=Preventive%20Health'}, {'url': 'https://www.healthline.com/search?q1=Wellness'}, 
+    {'url': 'https://www.healthline.com/search?q1=Preventive%20Medicine'}, {'url': 'https://www.healthline.com/search?q1=Health%20Tips'}, 
+    {'url': 'https://www.healthline.com/search?q1=Disease%20Prevention'}, {'url': 'https://www.healthline.com/search?q1=Healthy%20Lifestyle'}, 
+    {'url': 'https://www.healthline.com/search?q1=Immunizations'}, {'url': 'https://www.healthline.com/search?q1=Nutrition'}, 
+    {'url': 'https://www.healthline.com/search?q1=Physical%20Activity'}, {'url': 'https://www.healthline.com/search?q1=Stress%20Reduction'}, 
+    {'url': 'https://www.healthline.com/search?q1=Mental%20Health'}, {'url': 'https://www.healthline.com/search?q1=Preventive%20Screenings'}, 
+    {'url': 'https://www.healthline.com/search?q1=Healthy%20Aging'}, {'url': 'https://www.healthline.com/search?q1=Family%20Health'}, 
+    {'url': 'https://www.healthline.com/search?q1=Community%20Health'}
+]
