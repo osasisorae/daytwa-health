@@ -1,6 +1,59 @@
 import chromadb
 import os
 
+import logging
+import chromadb
+import os
+from utils import Utilities
+import utcnow
+
+# Initialize the utilities helper
+utilities = Utilities()
+
+class Vectorizer:
+    def __init__(self, user_id, data_type) -> None:
+        self.working_dir = os.getcwd()
+        self.unique_username = f"profile_{user_id}"
+        self.client = chromadb.PersistentClient(path=f"{self.working_dir}/{data_type}/{self.unique_username}")
+        self.user_id = user_id
+
+    def store_cv_summary(self, summary: str) -> None:
+        """Training program method responsible for, evaluating cv and suggesting relevant training programme.
+        Sotres vectorized user cv summary.
+        """
+        collection = self.client.get_or_create_collection(name=self.unique_username)
+
+        collection.add(
+            documents=[summary,],
+            metadatas=[
+                {"date": utcnow.get()},],
+            ids=[str(self.user_id),]
+        )
+        print('success!!')
+        return 0
+
+    def get_cv_summary(self):
+        collection = self.client.get_or_create_collection(name=self.unique_username)
+        results = collection.get(
+            ids=[str(self.user_id),]
+            )
+        if len(results['ids']) == 0:
+            # If there is no subscription data
+            print('No Summary Found')
+            return 0
+        
+        if len(results['ids']) > 1:
+            print('Error: Multiple entries found on user.')
+            return 1
+            
+        if len(results['ids']) == 1:
+            try:
+                summary = results['documents'][0]
+            except KeyError:
+                print('For some reason the key is not in metadatas')
+                
+            return summary
+
 class Profiler:
     def __init__(self, user_id) -> None:
         self.working_dir = os.getcwd()

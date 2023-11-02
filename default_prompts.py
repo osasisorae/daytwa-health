@@ -52,3 +52,80 @@ preventive_health_urls = [
     {'url': 'https://www.healthline.com/search?q1=Healthy%20Aging'}, {'url': 'https://www.healthline.com/search?q1=Family%20Health'}, 
     {'url': 'https://www.healthline.com/search?q1=Community%20Health'}
 ]
+
+healt_equity_intro = """
+Welcome to Daytwa Health - Empowering Healthcare Equity
+
+We appreciate your interest in joining our distinguished team of Health Equity Navigators. At Daytwa Health, we are steadfast in our commitment to advancing healthcare equity and addressing social justice within our healthcare system. Our Health Equity Navigators play a pivotal role in facilitating this mission by connecting underserved communities with the support and guidance they deserve.
+
+
+Roles and Responsibilities of Health Equity Navigators:
+
+In the capacity of a Health Equity Navigator, you will be entrusted with the following responsibilities:
+
+- Act as a vital liaison, bridging the gap between our innovative chatbot and the communities that are underserved.
+
+- Provide highly personalized and culturally sensitive healthcare guidance to community members, ensuring that their unique needs are comprehensively addressed.
+
+- Contribute to the collection of invaluable data, which is essential for an in-depth understanding of the specific healthcare requirements of these communities.
+
+- Actively engage in advocacy efforts that seek to rectify systemic healthcare disparities and injustices.
+
+
+Application Procedure:
+
+To apply for enrollment in our prestigious Health Equity Navigator training program, we kindly request that you submit your Curriculum Vitae (CV). Your CV serves as an essential tool for us to gain insight into your background, qualifications, and your dedication to the significance of this role.
+
+Submission of Your CV:
+
+You may submit your CV by sending it right here on this chat.
+"""
+
+healt_equity_applied = """
+Next Steps:
+
+Upon submission of your CV, our adept team will meticulously review your application within the next two weeks. Those who are selected for our training program will be contacted with precise instructions for the next phase of the application process.
+
+We express our sincere gratitude for considering Daytwa Health as a platform for contributing to healthcare equity and social justice. Your dedication is highly regarded, and we eagerly anticipate the significant impact you can make within underserved communities.
+"""
+
+prompt_template_cv = """
+   The goal is to summarize this CV {text}. If the CV aligns with the cultural competencies in the communities, I will suggest that [name] moves to the next section and start the training program here on Telegram with the command /train. 
+   If it doesn't align with the cultural competencies, Just inform [name] about the experience they should gain and recommend trying again in 3 months.
+
+Looking at the CV and assess whether their competencies align with the following cultural competencies:
+
+1. Immigrant and Refugee Communities:
+   - Sensitivity to the challenges of adjusting to a new culture
+   - Understanding language barriers
+   - Knowledge of culturally specific health practices and beliefs
+
+2. Indigenous Communities:
+   - Knowledge of traditional healing practices
+   - Respect for indigenous cultural beliefs
+   - Understanding the historical trauma and health disparities faced by these communities
+
+3. Racial and Ethnic Minority Communities:
+   - Awareness of culturally specific healthcare practices
+   - Addressing health disparities experienced by these groups
+   - Respecting cultural diversity within these communities
+
+4. LGBTQ+ Communities:
+   - Understanding the unique health needs and disparities faced by LGBTQ+ individuals
+   - Using inclusive language
+   - Addressing discrimination and stigma
+
+5. Low-Income and Underserved Communities:
+   - Sensitivity to socioeconomic disparities
+   - Knowledge of available community resources
+   - Addressing barriers to access, such as transportation and affordability
+
+Based on the CV, please assess whether [name] competencies align with these cultural competencies. If they align, suggest that they move to the next section and start the training program here on Telegram /train. If they don't align, provide recommendations for gaining the necessary experience and encourage them to try again in 3 months.
+You can get the [name] from the CV document passed.
+
+Remember just to tell the user what you know about him/her and let them know if the pass. Respond with one of the following outputs.
+1. There is no mention of direct experience or involvement in working with immigrant and refugee communities, indigenous communities, racial and ethnic minority communities, LGBTQ+ communities, or low-income and underserved communities.
+Therefore, I would suggest gaining more experience related to these communities to assess your cultural competencies. You may consider actively participating in related community projects, volunteering, or seeking opportunities to broaden your cultural awareness in these areas.
+If you are interested in improving your cultural competencies and would like to learn more about the training program, use /train.
+2. Based on your experience you seem like a good fit, someone from the team will contact you soon.
+"""
