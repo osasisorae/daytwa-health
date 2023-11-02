@@ -79,3 +79,6 @@ Make sure to set the following environment variables in your `.env` file:
 
 ## Currently Integrated Sites
 Check the site we get out our real time data [here](SITES.md)
+
+## For changes and Updates
+Check out our updates [here](UPDATES.md)
